@@ -1,0 +1,251 @@
+/* ================================================================
+   ALGORA 2026 — EDITORIAL POSTER AESTHETIC
+   Inspired by: High-contrast dark magazine design
+   
+   Color: Near-black + Vivid Red (#e8272b) — ONLY accent
+   Type:  Anton (display) / Barlow Condensed (heads) /
+          Barlow (body) / Space Mono (metadata)
+   ================================================================ */
+
+:root {
+  /* Backgrounds */
+  --bg:       #0d0d0d;
+  --bg2:      #111111;
+  --bg3:      #161616;
+  --surface:  #1c1c1c;
+  --surface2: #222222;
+
+  /* The ONE accent — red */
+  --red:      #e8272b;
+  --red-dark: #b51e22;
+  --red-muted:rgba(232,39,43,0.12);
+
+  /* Text */
+  --white:    #ffffff;
+  --off:      #f0ede8;
+  --gray:     rgba(255,255,255,0.52);
+  --gray-dim: rgba(255,255,255,0.25);
+  --gray-sub: rgba(255,255,255,0.15);
+
+  /* Borders */
+  --border:   rgba(255,255,255,0.1);
+  --border-r: rgba(232,39,43,0.45);
+
+  /* Fonts */
+  --f-display: 'Anton', sans-serif;
+  --f-cond:    'Barlow Condensed', sans-serif;
+  --f-body:    'Barlow', sans-serif;
+  --f-mono:    'Space Mono', monospace;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--f-body);
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a   { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; color: inherit; }
+
+/* ── Container ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section { padding: 100px 0; position: relative; }
+
+/* ── Section Header Pattern (matching the reference poster) ── */
+.section-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 60px;
+}
+
+.section-bar-label {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.section-bar-num {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: var(--red);
+}
+
+/* ── Horizontal rule ── */
+.rule {
+  height: 1px;
+  background: var(--border);
+  border: none;
+  margin: 24px 0;
+}
+
+.rule-bold {
+  height: 2px;
+  background: var(--red);
+  border: none;
+  width: 48px;
+  margin: 16px 0;
+}
+
+/* ── Big display heading ── */
+.display-head {
+  font-family: var(--f-display);
+  font-size: clamp(5rem, 12vw, 10rem);
+  color: var(--red);
+  line-height: 0.9;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.display-head-white {
+  font-family: var(--f-display);
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: var(--white);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+/* ── Eyebrow ── */
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* ── Vertical rotated label (poster element) ── */
+.v-label {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray-dim);
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  user-select: none;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 32px 28px;
+  position: relative;
+}
+
+.card-red {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--red);
+  padding: 32px 28px;
+  position: relative;
+}
+
+.card-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 32px 28px;
+  position: relative;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--red);
+  color: var(--white);
+  padding: 14px 32px;
+  border: 2px solid var(--red);
+  display: inline-block;
+  transition: background 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--red);
+}
+
+.btn-outline {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--white);
+  padding: 13px 32px;
+  border: 1px solid var(--border);
+  display: inline-block;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* ── Red tag/badge ── */
+.tag-red {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid var(--border-r);
+  padding: 3px 10px;
+  display: inline-block;
+}
+
+/* ── Small caps label ── */
+.label-sm {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--red); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .section   { padding: 72px 0; }
+}
+@media (max-width: 480px) {
+  .section { padding: 56px 0; }
+}

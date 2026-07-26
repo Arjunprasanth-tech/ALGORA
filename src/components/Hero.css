@@ -1,0 +1,220 @@
+/* ================================================================
+   HERO — Editorial Poster Style (LARGE PROMINENT LOGO)
+   ================================================================ */
+
+.hero {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+  position: relative;
+  margin-top: 64px; /* navbar height offset */
+  padding: 0;
+}
+
+/* Vertical side labels (desktop only) */
+.hero-side {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.hero-side-left  { left: 14px; }
+.hero-side-right { right: 14px; }
+
+.hero-side-line {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+}
+
+/* ── 1. PROMINENT LARGE TOP LOGO ──
+   Starts immediately below navbar, filling the upper space.
+*/
+.hero-top-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 16px;
+  z-index: 3;
+  width: 100%;
+}
+
+.hero-logo-large-img {
+  width: clamp(200px, 32vw, 360px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  opacity: 0.96;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.06));
+}
+
+/* ── 2. METADATA BAR ── */
+.hero-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  z-index: 3;
+  width: 100%;
+}
+
+.hero-bar-left,
+.hero-bar-right {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* ── 3. MAIN TITLE (ALGORA) ── */
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px 16px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-algora {
+  font-family: var(--f-display);
+  font-size: clamp(4.5rem, 16vw, 14rem);
+  color: var(--red);
+  text-transform: uppercase;
+  line-height: 0.85;
+  letter-spacing: -3px;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+/* ── 4. BOTTOM INFO ── */
+.hero-bottom {
+  border-top: 1px solid var(--border);
+  padding: 24px 40px 36px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 32px;
+  align-items: end;
+  z-index: 3;
+}
+
+.hero-sub-label {
+  font-family: var(--f-mono);
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.hero-fest-name {
+  font-family: var(--f-cond);
+  font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.hero-tagline {
+  font-family: var(--f-body);
+  font-size: 0.82rem;
+  color: var(--gray);
+  line-height: 1.65;
+  margin-top: 8px;
+}
+
+.hero-description {
+  font-family: var(--f-body);
+  font-size: 0.8rem;
+  color: var(--gray);
+  line-height: 1.75;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.hero-edition {
+  font-family: var(--f-mono);
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* ── MOBILE & TABLET RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    margin-top: 64px;
+  }
+
+  .hero-side { display: none; }
+
+  .hero-top-logo-section {
+    padding: 12px 12px 8px; /* Starts right below navbar */
+  }
+
+  .hero-logo-large-img {
+    width: clamp(170px, 55vw, 260px); /* Massive logo emblem filling the mobile upper space */
+  }
+
+  .hero-bar {
+    padding: 8px 16px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-bar-left,
+  .hero-bar-right {
+    font-size: 0.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-main {
+    padding: 8px 16px 12px;
+  }
+
+  .hero-algora {
+    font-size: clamp(3.8rem, 20vw, 7rem);
+    letter-spacing: -1px;
+  }
+
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 32px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-top-logo-section { padding: 8px 8px 4px; }
+  .hero-logo-large-img   { width: clamp(160px, 60vw, 240px); }
+  .hero-bar-left,
+  .hero-bar-right        { font-size: 0.46rem; letter-spacing: 1px; }
+  .hero-algora           { font-size: clamp(3.2rem, 21vw, 5.5rem); }
+}

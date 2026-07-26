@@ -1,0 +1,84 @@
+.register { background: var(--bg2); }
+
+.reg-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.reg-desc {
+  font-family: var(--f-body);
+  font-size: 0.92rem;
+  color: var(--gray);
+  line-height: 1.78;
+  margin-bottom: 36px;
+}
+
+.reg-steps { display: flex; flex-direction: column; gap: 0; }
+
+.reg-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.reg-step-num {
+  font-family: var(--f-display);
+  font-size: 1.5rem;
+  color: var(--red);
+  line-height: 1;
+  min-width: 44px;
+}
+
+.reg-step-text {
+  font-family: var(--f-cond);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+/* Right panel */
+.reg-cta-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--red);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reg-badge {
+  display: inline-block;
+  border: 1px solid var(--border-r);
+  color: var(--red);
+  padding: 3px 10px;
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+}
+
+.reg-platform {
+  font-family: var(--f-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--white);
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+.reg-note {
+  font-family: var(--f-body);
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.reg-big-btn { width: 100%; text-align: center; padding: 16px; font-size: 0.72rem; }
+.reg-status  { color: var(--gray); text-align: center; }
+
+@media (max-width: 768px) { .reg-layout { grid-template-columns: 1fr; gap: 40px; } }

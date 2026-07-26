@@ -1,0 +1,46 @@
+.speakers { background: var(--bg2); }
+
+.speakers-list { display: flex; flex-direction: column; }
+
+.sp-row {
+  display: grid;
+  grid-template-columns: 56px 56px 1fr auto;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
+}
+
+.sp-row:hover { padding-left: 12px; }
+
+.sp-num {
+  font-family: var(--f-display);
+  font-size: 1.8rem;
+  color: var(--red);
+  line-height: 1;
+}
+
+.sp-icon { font-size: 2.2rem; }
+
+.sp-role  { margin-bottom: 4px; }
+
+.sp-name {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.sp-org {
+  font-family: var(--f-body);
+  font-size: 0.82rem;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .sp-row { grid-template-columns: 40px 40px 1fr auto; gap: 14px; padding: 20px 0; }
+  .sp-name { font-size: 1.2rem; }
+}

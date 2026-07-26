@@ -1,0 +1,80 @@
+.schedule { background: var(--bg2); }
+
+.schedule-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.sched-note {
+  font-family: var(--f-body);
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.sched-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* List */
+.sched-list { padding-top: 12px; }
+
+.sched-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+}
+
+.sched-item-num {
+  font-family: var(--f-display);
+  font-size: 2.8rem;
+  color: var(--red);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.sched-item-name {
+  font-family: var(--f-cond);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.sched-item-count {
+  font-family: var(--f-mono);
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Venue card */
+.sched-venue {
+  margin-top: 24px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--red);
+}
+
+.venue-name {
+  font-family: var(--f-display);
+  font-size: 1.6rem;
+  color: var(--white);
+  margin: 8px 0 4px;
+}
+
+.venue-sub {
+  font-family: var(--f-mono);
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) { .schedule-layout { grid-template-columns: 1fr; gap: 40px; } }
