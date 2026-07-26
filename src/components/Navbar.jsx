@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoWhite from '../assets/logo-white.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -24,7 +25,7 @@ export default function Navbar() {
         <div className="nav-inner">
           <button className="nav-logo" onClick={() => scrollTo('home')}>
             <img
-              src="/logo-white.png"
+              src={logoWhite}
               alt="ALGORA"
               className="nav-logo-img"
             />
