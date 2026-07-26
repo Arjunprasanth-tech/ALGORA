@@ -1,5 +1,6 @@
 import React from 'react';
-import logoFull from '../assets/logo-white-cropped.png';
+import logoColored from '../assets/logo-colored-cropped.png';
+import collegeLogo from '../assets/college-logo.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -21,19 +22,25 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* 1. Official ALGORA Logo Centerpiece */}
+      {/* 1. Official Interactive ALGORA Logo Artwork with Electric Blue Circuit */}
       <div className="hero-top-logo-section reveal">
         <img
-          src={logoFull}
+          src={logoColored}
           alt="ALGORA Official Logo"
           className="hero-logo-large-img"
         />
       </div>
 
-      {/* 2. Metadata Bar */}
+      {/* 2. Metadata Bar with FULL St. George's College Logo */}
       <div className="hero-bar">
         <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
-        <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
+        <div className="hero-bar-college-wrap">
+          <img
+            src={collegeLogo}
+            alt="St. George's College Aruvithura"
+            className="hero-college-full-logo"
+          />
+        </div>
       </div>
 
       {/* 3. Main Poster Display Title — Giant Red ALGORA */}
