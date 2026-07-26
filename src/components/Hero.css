@@ -162,12 +162,13 @@
   margin: 0;
 }
 
-.spidey-web-title-strand {
+.spidey-web-title-strand-faint {
   width: clamp(220px, 55vw, 550px);
-  height: 24px;
+  height: 20px;
   display: block;
   margin: -6px auto 0;
   pointer-events: none;
+  opacity: 0.4;
 }
 
 /* ── 4. BOTTOM INFO & ACTIONS ── */

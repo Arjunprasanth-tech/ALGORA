@@ -88,11 +88,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--red);
 }
 
-.display-head {
+.display-head,
+.display-head-white {
   font-family: var(--f-display);
-  font-size: clamp(3.2rem, 9vw, 8rem);
+  font-size: clamp(3rem, 8vw, 7.5rem);
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 0.92;
   letter-spacing: 0px;
   color: var(--white);
 }
