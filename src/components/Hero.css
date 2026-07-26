@@ -1,5 +1,5 @@
 /* ================================================================
-   HERO — Rich Editorial Poster Style (FLUID RESPONSIVE TYPOGRAPHY)
+   HERO — Rich Editorial Poster Style (SPIDEY TECH HUD BAR)
    ================================================================ */
 
 .hero {
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px 14px;
+  padding: 14px 20px 10px;
   z-index: 3;
   width: 100%;
 }
@@ -52,7 +52,7 @@
 }
 
 .hero-logo-large-img {
-  width: clamp(150px, 24vw, 260px);
+  width: clamp(150px, 22vw, 240px);
   height: auto;
   object-fit: contain;
   display: block;
@@ -89,7 +89,7 @@
   }
 }
 
-/* ── 2. METADATA BAR (ST. GEORGE'S COLLEGE LEFT │ DEPT OF COMPUTER APPLICATIONS RIGHT) ── */
+/* ── 2. METADATA BAR ── */
 .hero-bar {
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 40px 18px;
+  padding: 12px 40px 10px;
   position: relative;
   z-index: 3;
   width: 100%;
@@ -126,7 +126,7 @@
 
 .hero-algora {
   font-family: var(--f-display);
-  font-size: clamp(4.5rem, 16vw, 13.5rem);
+  font-size: clamp(4.2rem, 15vw, 12.5rem);
   color: var(--red);
   text-transform: uppercase;
   line-height: 0.88;
@@ -136,13 +136,71 @@
   margin: 0;
 }
 
-/* ── 4. BOTTOM INFO & ACTIONS ── */
+/* ── 4. WEB-SHOOTER SPIDEY TECH HUD BAR ── */
+.spidey-hud-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(16, 16, 16, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-r);
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(232, 39, 43, 0.18);
+  padding: 10px 24px;
+  margin: 10px 0 16px;
+  width: calc(100% - 96px);
+  max-width: 1040px;
+  z-index: 3;
+}
+
+.hud-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hud-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.hud-label {
+  font-family: var(--f-mono);
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.hud-val {
+  font-family: var(--f-cond);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1;
+  display: block;
+}
+
+.hud-divider {
+  width: 1px;
+  height: 26px;
+  background: var(--border-r);
+  opacity: 0.5;
+}
+
+/* ── 5. BOTTOM INFO & ACTIONS ── */
 .hero-bottom {
   border-top: 1px solid var(--border);
-  padding: 24px 48px 36px;
+  padding: 20px 48px 32px;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 32px;
+  gap: 28px;
   align-items: end;
   z-index: 3;
 }
@@ -214,33 +272,47 @@
   .hero-side { display: none; }
 
   .hero-top-logo-section {
-    padding: 12px 16px;
+    padding: 10px 16px;
   }
 
   .hero-logo-large-img {
-    width: clamp(140px, 44vw, 200px);
+    width: clamp(130px, 42vw, 190px);
   }
 
   .hero-bar {
-    padding: 10px 12px;
+    padding: 8px 12px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .hero-main {
-    padding: 12px 16px;
+    padding: 10px 16px;
   }
 
   .hero-algora {
-    font-size: clamp(3.5rem, 18vw, 6.2rem);
+    font-size: clamp(3.2rem, 17vw, 6rem);
     letter-spacing: -1px;
   }
 
+  .spidey-hud-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 8px;
+    width: calc(100% - 32px);
+    padding: 12px 16px;
+    margin: 8px 0 12px;
+  }
+
+  .hud-divider { display: none; }
+
+  .hud-val { font-size: 0.78rem; }
+  .hud-label { font-size: 0.45rem; }
+
   .hero-bottom {
     grid-template-columns: 1fr;
-    padding: 20px 16px 32px;
-    gap: 18px;
+    padding: 16px 16px 28px;
+    gap: 16px;
   }
 }
 
@@ -249,9 +321,9 @@
     min-height: calc(100vh - 64px);
     padding: 12px 0 28px;
   }
-  .hero-top-logo-section { padding: 10px 12px; }
-  .hero-logo-large-img   { width: clamp(130px, 46vw, 180px); }
+  .hero-top-logo-section { padding: 8px 12px; }
+  .hero-logo-large-img   { width: clamp(120px, 44vw, 170px); }
   .hero-bar              { padding: 8px 10px; }
-  .hero-main             { padding: 10px 12px; }
-  .hero-algora           { font-size: clamp(3rem, 19vw, 5rem); }
+  .hero-main             { padding: 8px 12px; }
+  .hero-algora           { font-size: clamp(2.8rem, 18vw, 4.8rem); }
 }

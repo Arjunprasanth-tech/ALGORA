@@ -61,6 +61,25 @@
   align-items: center;
 }
 
+.ev-tags-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.spidey-badge {
+  font-family: var(--f-mono);
+  font-size: 0.5rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(232, 39, 43, 0.12);
+  border: 1px solid var(--border-r);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
 .ev-num {
   font-family: var(--f-mono);
   font-size: 0.65rem;

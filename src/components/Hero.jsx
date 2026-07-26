@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 2. Metadata Bar: St. George's College Text (Left) │ Dept. of Computer Applications Text (Right) */}
+      {/* 2. Metadata Bar */}
       <div className="hero-bar">
         <span className="hero-bar-left">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
         <span className="hero-bar-right">DEPT. OF COMPUTER APPLICATIONS</span>
@@ -43,7 +43,42 @@ export default function Hero() {
         <h1 className="hero-algora">ALGORA</h1>
       </div>
 
-      {/* 4. Rich Poster Info Row */}
+      {/* 4. WEB-SHOOTER IRON-SPIDER HUD STAT COUNTERS */}
+      <div className="spidey-hud-bar reveal">
+        <div className="hud-cell">
+          <span className="hud-icon">🕸️</span>
+          <div>
+            <span className="hud-label">WEB-SHOOTERS</span>
+            <span className="hud-val">CALIBRATED</span>
+          </div>
+        </div>
+        <div className="hud-divider" />
+        <div className="hud-cell">
+          <span className="hud-icon">⚡</span>
+          <div>
+            <span className="hud-label">PRIZE POOL</span>
+            <span className="hud-val">₹50,000+</span>
+          </div>
+        </div>
+        <div className="hud-divider" />
+        <div className="hud-cell">
+          <span className="hud-icon">🕷️</span>
+          <div>
+            <span className="hud-label">TECH EVENTS</span>
+            <span className="hud-val">07 CHALLENGES</span>
+          </div>
+        </div>
+        <div className="hud-divider" />
+        <div className="hud-cell">
+          <span className="hud-icon">📍</span>
+          <div>
+            <span className="hud-label">SPIDEY BASE</span>
+            <span className="hud-val">ARUVITHURA</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 5. Rich Poster Info Row */}
       <div className="hero-bottom">
         <div>
           <span className="hero-sub-label">Where Innovation Meets Imagination</span>
