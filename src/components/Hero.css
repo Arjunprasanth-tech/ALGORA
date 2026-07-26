@@ -1,5 +1,5 @@
 /* ================================================================
-   HERO — Editorial Poster Style (COMPLETE LOGO & SPACIOUS COMPOSITION)
+   HERO — Editorial Poster Style (BALANCED FULL LOGO & ALGORA TITLE)
    ================================================================ */
 
 .hero {
@@ -33,20 +33,18 @@
   background: var(--border);
 }
 
-/* ── 1. COMPLETE LOGO SECTION (Emblem + A L G O R A Text) ──
-   Spacious breathing room top & bottom
-*/
+/* ── 1. COMPLETE OFFICIAL LOGO ── */
 .hero-top-logo-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 24px 24px;
+  padding: 24px 20px 18px;
   z-index: 3;
   width: 100%;
 }
 
 .hero-logo-large-img {
-  width: clamp(180px, 28vw, 300px);
+  width: clamp(160px, 24vw, 260px);
   height: auto;
   object-fit: contain;
   display: block;
@@ -60,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 48px;
+  padding: 10px 40px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   z-index: 3;
@@ -76,12 +74,12 @@
   color: var(--gray);
 }
 
-/* ── 3. MAIN DISPLAY TITLE (TECH FEST '26) ── */
+/* ── 3. MAIN DISPLAY TITLE — ALGORA ── */
 .hero-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 48px 28px;
+  padding: 18px 40px 20px;
   position: relative;
   z-index: 3;
   width: 100%;
@@ -90,7 +88,7 @@
 
 .hero-algora {
   font-family: var(--f-display);
-  font-size: clamp(4.2rem, 15vw, 13rem);
+  font-size: clamp(4.5rem, 16vw, 13.5rem);
   color: var(--red);
   text-transform: uppercase;
   line-height: 0.88;
@@ -103,10 +101,10 @@
 /* ── 4. BOTTOM INFO ── */
 .hero-bottom {
   border-top: 1px solid var(--border);
-  padding: 36px 48px 48px;
+  padding: 28px 40px 40px;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 40px;
+  gap: 32px;
   align-items: end;
   z-index: 3;
 }
@@ -117,7 +115,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gray);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: block;
 }
 
@@ -133,23 +131,23 @@
 
 .hero-tagline {
   font-family: var(--f-body);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--gray);
-  line-height: 1.7;
-  margin-top: 10px;
+  line-height: 1.65;
+  margin-top: 8px;
 }
 
 .hero-description {
   font-family: var(--f-body);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--gray);
-  line-height: 1.78;
+  line-height: 1.75;
 }
 
 .hero-cta-group {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -162,11 +160,11 @@
   color: var(--gray-dim);
   border-top: 1px solid var(--border);
   padding-top: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
-/* ── MOBILE RESPONSIVE (Spacious & Balanced) ── */
+/* ── MOBILE RESPONSIVE ── */
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
@@ -176,48 +174,48 @@
   .hero-side { display: none; }
 
   .hero-top-logo-section {
-    padding: 24px 20px 20px;
+    padding: 16px 16px 12px;
   }
 
   .hero-logo-large-img {
-    width: clamp(160px, 48vw, 240px); /* Clean, spacious full logo on mobile */
+    width: clamp(140px, 44vw, 200px);
   }
 
   .hero-bar {
-    padding: 12px 20px;
+    padding: 10px 16px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .hero-bar-left,
   .hero-bar-right {
-    font-size: 0.52rem;
+    font-size: 0.5rem;
     letter-spacing: 1.5px;
   }
 
   .hero-main {
-    padding: 20px 20px 24px;
+    padding: 14px 16px 16px;
   }
 
   .hero-algora {
-    font-size: clamp(3.4rem, 17vw, 6rem);
+    font-size: clamp(3.5rem, 18vw, 6.2rem);
     letter-spacing: -1px;
   }
 
   .hero-bottom {
     grid-template-columns: 1fr;
-    padding: 28px 20px 40px;
-    gap: 24px;
+    padding: 24px 16px 36px;
+    gap: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-top-logo-section { padding: 20px 16px 16px; }
-  .hero-logo-large-img   { width: clamp(150px, 52vw, 220px); }
-  .hero-bar              { padding: 10px 16px; }
+  .hero-top-logo-section { padding: 14px 12px 10px; }
+  .hero-logo-large-img   { width: clamp(130px, 46vw, 180px); }
+  .hero-bar              { padding: 8px 14px; }
   .hero-bar-left,
   .hero-bar-right        { font-size: 0.46rem; letter-spacing: 1px; }
-  .hero-main             { padding: 16px 16px 20px; }
-  .hero-algora           { font-size: clamp(2.8rem, 18vw, 5rem); }
-  .hero-bottom           { padding: 24px 16px 36px; gap: 20px; }
+  .hero-main             { padding: 12px 14px 14px; }
+  .hero-algora           { font-size: clamp(3rem, 19vw, 5rem); }
+  .hero-bottom           { padding: 20px 14px 32px; gap: 18px; }
 }

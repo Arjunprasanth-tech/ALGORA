@@ -36,16 +36,16 @@ export default function Hero() {
         <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
       </div>
 
-      {/* 3. Main Display Title */}
+      {/* 3. Main Display Title — ALGORA */}
       <div className="hero-main reveal">
-        <h1 className="hero-algora">TECH FEST '26</h1>
+        <h1 className="hero-algora">ALGORA</h1>
       </div>
 
       {/* 4. Bottom Info & Actions */}
       <div className="hero-bottom">
         <div>
           <span className="hero-sub-label">Where Innovation Meets Imagination</span>
-          <div className="hero-fest-name">ALGORA · 2026</div>
+          <div className="hero-fest-name">TECH FEST · 2026</div>
           <p className="hero-tagline">
             The inaugural tech-cultural festival of the Department of
             Computer Applications — celebrating innovation, creativity,
