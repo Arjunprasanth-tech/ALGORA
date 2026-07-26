@@ -1,5 +1,5 @@
 /* ================================================================
-   HERO — Rich Editorial Poster Style (FULL COLLEGE LOGO & ALGORA TITLE)
+   HERO — Rich Editorial Poster Style (EQUAL METADATA FONT SIZES)
    ================================================================ */
 
 .hero {
@@ -55,7 +55,7 @@
   margin: 0 auto;
 }
 
-/* ── 2. METADATA BAR WITH FULL COLLEGE LOGO ── */
+/* ── 2. METADATA BAR (EQUAL FONT SIZES ON BOTH SIDES) ── */
 .hero-bar {
   display: flex;
   align-items: center;
@@ -75,19 +75,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gray);
-}
-
-.hero-bar-college-wrap {
-  display: flex;
-  align-items: center;
-}
-
-.hero-college-full-logo {
-  height: clamp(26px, 4vw, 36px);
-  width: auto;
-  object-fit: contain;
-  display: block;
-  opacity: 0.95;
 }
 
 /* ── 3. MAIN DISPLAY TITLE — GIANT RED ALGORA ── */
@@ -180,7 +167,7 @@
   width: 100%;
 }
 
-/* ── MOBILE RESPONSIVE ── */
+/* ── MOBILE RESPONSIVE (EQUAL FONT SIZES) ── */
 @media (max-width: 900px) {
   .hero {
     min-height: calc(100vh - 64px);
@@ -209,13 +196,9 @@
   .hero-bar-left,
   .hero-bar-right {
     font-family: var(--f-cond);
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 1.5px;
-  }
-
-  .hero-college-full-logo {
-    height: clamp(22px, 6vw, 28px);
   }
 
   .hero-main {
@@ -242,8 +225,8 @@
   .hero-top-logo-section { padding: 10px 12px; }
   .hero-logo-large-img   { width: clamp(130px, 46vw, 180px); }
   .hero-bar              { padding: 8px 12px; }
-  .hero-bar-left         { font-size: 0.44rem; letter-spacing: 1px; }
-  .hero-college-full-logo{ height: clamp(20px, 6.5vw, 26px); }
+  .hero-bar-left,
+  .hero-bar-right        { font-size: 0.62rem; letter-spacing: 1px; }
   .hero-main             { padding: 10px 12px; }
   .hero-algora           { font-size: clamp(3rem, 19vw, 5rem); }
 }
