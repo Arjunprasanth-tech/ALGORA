@@ -162,13 +162,14 @@
   margin: 0;
 }
 
-.spidey-web-title-strand-faint {
-  width: clamp(220px, 55vw, 550px);
-  height: 20px;
+.spidey-web-title-strand-visible {
+  width: clamp(240px, 58vw, 580px);
+  height: 24px;
   display: block;
   margin: -6px auto 0;
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
 }
 
 /* ── 4. BOTTOM INFO & ACTIONS ── */

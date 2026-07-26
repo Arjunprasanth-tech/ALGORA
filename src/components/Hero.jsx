@@ -38,14 +38,15 @@ export default function Hero() {
         <span className="hero-bar-right">DEPT. OF COMPUTER APPLICATIONS</span>
       </div>
 
-      {/* 3. Main Poster Display Title with Ultra-Faint Web Strand */}
+      {/* 3. Main Poster Display Title with Crisp Visible Spider Web Strand */}
       <div className="hero-main reveal">
         <div className="hero-algora-title-wrap">
           <h1 className="hero-algora">ALGORA</h1>
-          {/* Ultra-faint spider web strand (barely visible touch) */}
-          <svg className="spidey-web-title-strand-faint" viewBox="0 0 520 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 Q 260 36 520 0" stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" fill="none"/>
-            <path d="M60 0 Q 260 24 460 0" stroke="rgba(232,39,43,0.15)" strokeWidth="0.6" fill="none"/>
+          {/* Crisp, clearly visible Spider Web Strand */}
+          <svg className="spidey-web-title-strand-visible" viewBox="0 0 520 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 Q 260 40 520 0" stroke="rgba(255,255,255,0.85)" strokeWidth="1.3" fill="none"/>
+            <path d="M50 0 Q 260 28 470 0" stroke="rgba(232,39,43,0.75)" strokeWidth="1" fill="none"/>
+            <circle cx="260" cy="20" r="2.5" fill="#ffffff"/>
           </svg>
         </div>
       </div>
