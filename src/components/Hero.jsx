@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFull from '../assets/logo-white-cropped.png';
+import logoEmblem from '../assets/logo-emblem-white.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
 
-      {/* Vertical side labels (desktop) */}
+      {/* Vertical side labels (desktop only) */}
       <div className="hero-side hero-side-left">
         <div className="hero-side-line" />
         <span className="v-label">INAUGURAL EDITION</span>
@@ -21,29 +21,29 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* Full Logo Section (Emblem + A L G O R A text) — sits tightly under navbar */}
+      {/* 1. Centered Emblem with elegant breathing room */}
       <div className="hero-top-logo-section reveal">
         <img
-          src={logoFull}
-          alt="ALGORA Full Logo"
+          src={logoEmblem}
+          alt="ALGORA Emblem"
           className="hero-logo-large-img"
         />
       </div>
 
-      {/* Metadata bar */}
+      {/* 2. Metadata Bar */}
       <div className="hero-bar">
         <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
         <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
       </div>
 
-      {/* Main Title — ALGORA */}
+      {/* 3. Main Display Title — ALGORA */}
       <div className="hero-main reveal">
         <h1 className="hero-algora">ALGORA</h1>
       </div>
 
-      {/* Bottom info: three columns */}
+      {/* 4. Bottom Info & Actions */}
       <div className="hero-bottom">
-        <div>
+        <div className="hero-col-main">
           <span className="hero-sub-label">Where Innovation Meets Imagination</span>
           <div className="hero-fest-name">TECH FEST · 2026</div>
           <p className="hero-tagline">
@@ -53,7 +53,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div>
+        <div className="hero-col-desc">
           <p className="hero-description">
             ALGORA brings together the brightest minds, the boldest
             ideas, and the most creative spirits through competitions

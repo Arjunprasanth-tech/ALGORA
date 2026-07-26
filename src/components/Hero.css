@@ -1,5 +1,5 @@
 /* ================================================================
-   HERO — Editorial Poster Style (FULL LOGO & ZERO-GAP MOBILE FIX)
+   HERO — Editorial Poster Style (BALANCED & SPACIOUS LAYOUT)
    ================================================================ */
 
 .hero {
@@ -9,7 +9,7 @@
   background: var(--bg);
   overflow: hidden;
   position: relative;
-  margin-top: 64px; /* navbar height offset */
+  margin-top: 64px; /* navbar offset */
   padding: 0;
 }
 
@@ -24,8 +24,8 @@
   transform: translateY(-50%);
   z-index: 2;
 }
-.hero-side-left  { left: 14px; }
-.hero-side-right { right: 14px; }
+.hero-side-left  { left: 18px; }
+.hero-side-right { right: 18px; }
 
 .hero-side-line {
   width: 1px;
@@ -33,26 +33,23 @@
   background: var(--border);
 }
 
-/* ── 1. PROMINENT FULL LOGO SECTION ──
-   Starts immediately below navbar (0 gap above!)
-*/
+/* ── 1. EMBLEM SECTION (Comfortable Breathing Room) ── */
 .hero-top-logo-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 20px 8px; /* Tight padding directly below navbar */
+  padding: 36px 24px 28px;
   z-index: 3;
   width: 100%;
-  margin: 0;
 }
 
 .hero-logo-large-img {
-  width: clamp(200px, 34vw, 340px);
+  width: clamp(140px, 22vw, 240px);
   height: auto;
   object-fit: contain;
   display: block;
-  opacity: 0.98;
-  filter: drop-shadow(0 0 20px rgba(255,255,255,0.08));
+  opacity: 0.96;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.06));
   margin: 0 auto;
 }
 
@@ -61,29 +58,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 12px 48px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   z-index: 3;
   width: 100%;
-  margin-top: 8px;
 }
 
 .hero-bar-left,
 .hero-bar-right {
   font-family: var(--f-mono);
-  font-size: 0.6rem;
+  font-size: 0.62rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gray);
 }
 
-/* ── 3. MAIN TITLE (ALGORA) ── */
+/* ── 3. MAIN DISPLAY TITLE (ALGORA) ── */
 .hero-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 40px 16px;
+  padding: 24px 48px 28px;
   position: relative;
   z-index: 3;
   width: 100%;
@@ -92,11 +88,11 @@
 
 .hero-algora {
   font-family: var(--f-display);
-  font-size: clamp(4.5rem, 16vw, 14rem);
+  font-size: clamp(4.5rem, 16vw, 13.5rem);
   color: var(--red);
   text-transform: uppercase;
-  line-height: 0.85;
-  letter-spacing: -3px;
+  line-height: 0.88;
+  letter-spacing: -2px;
   display: block;
   width: 100%;
   margin: 0;
@@ -105,10 +101,10 @@
 /* ── 4. BOTTOM INFO ── */
 .hero-bottom {
   border-top: 1px solid var(--border);
-  padding: 24px 40px 36px;
+  padding: 36px 48px 48px;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 32px;
+  gap: 40px;
   align-items: end;
   z-index: 3;
 }
@@ -119,7 +115,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gray);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   display: block;
 }
 
@@ -135,23 +131,23 @@
 
 .hero-tagline {
   font-family: var(--f-body);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--gray);
-  line-height: 1.65;
-  margin-top: 8px;
+  line-height: 1.7;
+  margin-top: 10px;
 }
 
 .hero-description {
   font-family: var(--f-body);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--gray);
-  line-height: 1.75;
+  line-height: 1.78;
 }
 
 .hero-cta-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -164,11 +160,11 @@
   color: var(--gray-dim);
   border-top: 1px solid var(--border);
   padding-top: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   width: 100%;
 }
 
-/* ── MOBILE RESPONSIVE ── */
+/* ── MOBILE & TABLET RESPONSIVE (Balanced & Spacious) ── */
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
@@ -177,47 +173,50 @@
 
   .hero-side { display: none; }
 
+  /* Comfortable padding on mobile so nothing feels cramped */
   .hero-top-logo-section {
-    padding: 8px 12px 4px; /* Sits directly against navbar on mobile */
+    padding: 28px 20px 22px;
   }
 
   .hero-logo-large-img {
-    width: clamp(170px, 55vw, 260px); /* Big full logo on mobile */
+    width: clamp(130px, 40vw, 200px); /* Clean, balanced emblem size */
   }
 
   .hero-bar {
-    padding: 8px 16px;
+    padding: 12px 20px;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 4px;
   }
 
   .hero-bar-left,
   .hero-bar-right {
-    font-size: 0.5rem;
+    font-size: 0.52rem;
     letter-spacing: 1.5px;
   }
 
   .hero-main {
-    padding: 8px 16px 12px;
+    padding: 20px 20px 24px;
   }
 
   .hero-algora {
-    font-size: clamp(3.8rem, 20vw, 7rem);
+    font-size: clamp(3.6rem, 18vw, 6.5rem);
     letter-spacing: -1px;
   }
 
   .hero-bottom {
     grid-template-columns: 1fr;
-    padding: 20px 16px 32px;
-    gap: 20px;
+    padding: 28px 20px 40px;
+    gap: 24px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-top-logo-section { padding: 4px 6px 2px; }
-  .hero-logo-large-img   { width: clamp(160px, 58vw, 240px); }
+  .hero-top-logo-section { padding: 24px 16px 18px; }
+  .hero-logo-large-img   { width: clamp(120px, 42vw, 180px); }
+  .hero-bar              { padding: 10px 16px; }
   .hero-bar-left,
   .hero-bar-right        { font-size: 0.46rem; letter-spacing: 1px; }
-  .hero-algora           { font-size: clamp(3.2rem, 21vw, 5.5rem); }
+  .hero-main             { padding: 18px 16px 20px; }
+  .hero-algora           { font-size: clamp(3rem, 19vw, 5rem); }
+  .hero-bottom           { padding: 24px 16px 36px; gap: 20px; }
 }
