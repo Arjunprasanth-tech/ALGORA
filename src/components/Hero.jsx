@@ -1,5 +1,5 @@
 import React from 'react';
-import logoColored from '../assets/logo-colored-cropped.png';
+import logoFull from '../assets/logo-white-cropped.png';
 import collegeLogo from '../assets/college-logo.png';
 import './Hero.css';
 
@@ -22,13 +22,15 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* 1. Official Interactive ALGORA Logo Artwork with Electric Blue Circuit */}
+      {/* 1. Official Monochrome White ALGORA Logo Artwork */}
       <div className="hero-top-logo-section reveal">
-        <img
-          src={logoColored}
-          alt="ALGORA Official Logo"
-          className="hero-logo-large-img"
-        />
+        <div className="hero-logo-interactive-wrap">
+          <img
+            src={logoFull}
+            alt="ALGORA Official Logo"
+            className="hero-logo-large-img"
+          />
+        </div>
       </div>
 
       {/* 2. Metadata Bar with FULL St. George's College Logo */}
