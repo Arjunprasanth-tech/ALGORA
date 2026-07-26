@@ -29,9 +29,11 @@ export default function Events() {
         <div className="events-head reveal">
           <div className="title-web-wrap">
             <h2 className="display-head">EVENTS</h2>
-            <svg className="section-web-strand" viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0 Q 100 25 200 0" stroke="rgba(255,255,255,0.55)" strokeWidth="1" fill="none"/>
-              <circle cx="100" cy="12" r="2" fill="#ffffff"/>
+            <svg className="section-web-strand" viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0 L40 14 L120 20 L200 14 L240 0" stroke="rgba(255,255,255,0.6)" strokeWidth="1" fill="none"/>
+              <circle cx="40" cy="14" r="2" fill="#ffffff"/>
+              <circle cx="120" cy="20" r="3" fill="#e8272b"/>
+              <circle cx="200" cy="14" r="2" fill="#ffffff"/>
             </svg>
           </div>
         </div>

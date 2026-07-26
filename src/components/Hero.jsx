@@ -9,17 +9,28 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
 
-      {/* High-Contrast Crisp White SVG Spider Web Corner Overlays */}
-      <svg className="spidey-web-bg web-top-left" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0 L100 0 L0 100 Z" fill="none"/>
-        <path d="M0 0 L100 100 M0 0 L50 100 M0 0 L100 50 M0 0 L100 25 M0 0 L25 100" stroke="rgba(255,255,255,0.4)" strokeWidth="0.8"/>
-        <path d="M20 0 Q 20 20 0 20 M40 0 Q 40 40 0 40 M60 0 Q 60 60 0 60 M80 0 Q 80 80 0 80 M100 0 Q 100 100 0 100" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" fill="none"/>
+      {/* Techno-Circuit Cyber-Web SVG Corner Graphics */}
+      <svg className="spidey-web-bg web-top-left" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 L120 0 L0 120 Z" fill="none"/>
+        {/* Main radial circuit web lines */}
+        <path d="M0 0 L120 120 M0 0 L60 120 M0 0 L120 60 M0 0 L120 30 M0 0 L30 120" stroke="rgba(255,255,255,0.45)" strokeWidth="0.8"/>
+        {/* Polygon techno-web arcs */}
+        <path d="M25 0 L25 25 L0 25 M50 0 L50 50 L0 50 M75 0 L75 75 L0 75 M100 0 L100 100 L0 100" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" fill="none"/>
+        {/* Cyber circuit nodes */}
+        <circle cx="25" cy="25" r="2.5" fill="#ffffff" />
+        <circle cx="50" cy="50" r="2.5" fill="#e8272b" />
+        <circle cx="75" cy="75" r="2.5" fill="#ffffff" />
+        <circle cx="100" cy="100" r="3" fill="#e8272b" />
       </svg>
 
-      <svg className="spidey-web-bg web-top-right" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M100 0 L0 0 L100 100 Z" fill="none"/>
-        <path d="M100 0 L0 100 M100 0 L50 100 M100 0 L0 50 M100 0 L0 25 M100 0 L75 100" stroke="rgba(255,255,255,0.4)" strokeWidth="0.8"/>
-        <path d="M80 0 Q 80 20 100 20 M60 0 Q 60 40 100 40 M40 0 Q 40 60 100 60 M20 0 Q 20 80 100 80 M0 0 Q 0 100 100 100" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" fill="none"/>
+      <svg className="spidey-web-bg web-top-right" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M120 0 L0 0 L120 120 Z" fill="none"/>
+        <path d="M120 0 L0 120 M120 0 L60 120 M120 0 L0 60 M120 0 L0 30 M120 0 L90 120" stroke="rgba(255,255,255,0.45)" strokeWidth="0.8"/>
+        <path d="M95 0 L95 25 L120 25 M70 0 L70 50 L120 50 M45 0 L45 75 L120 75 M20 0 L20 100 L120 100" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" fill="none"/>
+        <circle cx="95" cy="25" r="2.5" fill="#ffffff" />
+        <circle cx="70" cy="50" r="2.5" fill="#e8272b" />
+        <circle cx="45" cy="75" r="2.5" fill="#ffffff" />
+        <circle cx="20" cy="100" r="3" fill="#e8272b" />
       </svg>
 
       {/* Vertical side labels (desktop) */}
@@ -51,15 +62,19 @@ export default function Hero() {
         <span className="hero-bar-right">DEPT. OF COMPUTER APPLICATIONS</span>
       </div>
 
-      {/* 3. Main Poster Display Title with White Spider Web Strand */}
+      {/* 3. Main Poster Display Title with Techno-Circuit Web Strand */}
       <div className="hero-main reveal">
         <div className="hero-algora-title-wrap">
           <h1 className="hero-algora">ALGORA</h1>
-          {/* Crisp White Web strand hanging under title */}
-          <svg className="spidey-web-title-strand" viewBox="0 0 400 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 Q 200 40 400 0" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" fill="none"/>
-            <path d="M50 0 Q 200 28 350 0" stroke="rgba(255,255,255,0.35)" strokeWidth="0.8" fill="none"/>
-            <circle cx="200" cy="20" r="2.5" fill="#ffffff"/>
+          {/* Techno-Circuit Web strand hanging under title */}
+          <svg className="spidey-web-title-strand" viewBox="0 0 500 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 L50 18 L250 28 L450 18 L500 0" stroke="rgba(255,255,255,0.6)" strokeWidth="1.2" fill="none"/>
+            <path d="M100 0 L150 14 L250 22 L350 14 L400 0" stroke="rgba(232,39,43,0.5)" strokeWidth="0.9" fill="none"/>
+            <circle cx="50" cy="18" r="2.5" fill="#ffffff" />
+            <circle cx="150" cy="14" r="2.5" fill="#e8272b" />
+            <circle cx="250" cy="28" r="3.5" fill="#ffffff" stroke="#e8272b" strokeWidth="1" />
+            <circle cx="350" cy="14" r="2.5" fill="#e8272b" />
+            <circle cx="450" cy="18" r="2.5" fill="#ffffff" />
           </svg>
         </div>
       </div>
