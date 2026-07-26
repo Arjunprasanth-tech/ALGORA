@@ -1,5 +1,6 @@
 import React from 'react';
 import logoFull from '../assets/logo-white-cropped.png';
+import collegeLogo from '../assets/college-logo.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -21,7 +22,7 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* 1. Official ALGORA Logo Artwork Centerpiece */}
+      {/* 1. Official ALGORA Logo Centerpiece */}
       <div className="hero-top-logo-section reveal">
         <img
           src={logoFull}
@@ -30,27 +31,52 @@ export default function Hero() {
         />
       </div>
 
-      {/* 2. Sleek Metadata Rule Bar */}
+      {/* 2. Metadata Bar with FULL St. George's College Logo */}
       <div className="hero-bar">
         <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
-        <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
+        <div className="hero-bar-college-wrap">
+          <img
+            src={collegeLogo}
+            alt="St. George's College Aruvithura"
+            className="hero-college-full-logo"
+          />
+        </div>
       </div>
 
-      {/* 3. Clean Subhead & Tagline */}
+      {/* 3. Main Poster Display Title — Giant Red ALGORA */}
       <div className="hero-main reveal">
-        <div className="hero-edition-tag">EDITION 01 · 2026</div>
-        <h1 className="hero-subhead-title">INAUGURAL TECH FEST</h1>
-        <p className="hero-tagline-text">Where Innovation Meets Imagination</p>
+        <h1 className="hero-algora">ALGORA</h1>
       </div>
 
-      {/* 4. Action CTA Buttons */}
-      <div className="hero-bottom-clean reveal">
-        <button className="btn-primary" onClick={() => scrollTo('events')}>
-          EXPLORE EVENTS
-        </button>
-        <button className="btn-outline" onClick={() => scrollTo('register')}>
-          REGISTER NOW →
-        </button>
+      {/* 4. Rich Poster Info Row */}
+      <div className="hero-bottom">
+        <div>
+          <span className="hero-sub-label">Where Innovation Meets Imagination</span>
+          <div className="hero-fest-name">TECH FEST · 2026</div>
+          <p className="hero-tagline">
+            The inaugural tech-cultural festival of the Department of
+            Computer Applications — celebrating innovation, creativity,
+            and collaboration.
+          </p>
+        </div>
+
+        <div>
+          <p className="hero-description">
+            ALGORA brings together the brightest minds, the boldest
+            ideas, and the most creative spirits through competitions
+            and experiences that push the boundaries of technology.
+          </p>
+        </div>
+
+        <div className="hero-cta-group">
+          <div className="hero-edition">EDITION 01 · VOL. I</div>
+          <button className="btn-primary" onClick={() => scrollTo('events')}>
+            EXPLORE EVENTS
+          </button>
+          <button className="btn-outline" onClick={() => scrollTo('register')}>
+            REGISTER NOW →
+          </button>
+        </div>
       </div>
 
     </section>

@@ -25,27 +25,6 @@
   justify-content: space-between;
 }
 
-/* Brand Group: Compact Crest Icon + Divider + ALGORA Brand */
-.nav-brand-group {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.nav-crest-icon {
-  height: 30px;
-  width: auto;
-  object-fit: contain;
-  opacity: 0.95;
-  display: block;
-}
-
-.nav-divider-line {
-  width: 1px;
-  height: 20px;
-  background: var(--border);
-}
-
 /* Logo */
 .nav-logo {
   display: flex;
@@ -55,7 +34,7 @@
 }
 
 .nav-logo-img {
-  height: 30px;
+  height: 34px;
   width: auto;
   aspect-ratio: 1 / 1;
   object-fit: contain;
@@ -71,7 +50,7 @@
 
 .logo-main {
   font-family: var(--f-display);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--white);
   letter-spacing: 2px;
   line-height: 1;
@@ -79,9 +58,9 @@
 
 .logo-year {
   font-family: var(--f-display);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--red);
-  margin-left: 5px;
+  margin-left: 6px;
   line-height: 1;
 }
 
@@ -186,24 +165,7 @@
 }
 
 @media (max-width: 768px) {
-  .nav-brand-group { gap: 8px; }
-  .nav-crest-icon { height: 24px; }
-  .nav-divider-line { height: 16px; }
-  .logo-main { font-size: 1.3rem; }
-  .logo-year { font-size: 0.85rem; }
-  .nav-logo-img { height: 24px; }
-
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .nav-inner { padding: 0 16px; }
-}
-
-@media (max-width: 480px) {
-  .nav-brand-group { gap: 6px; }
-  .nav-crest-icon { height: 22px; }
-  .nav-divider-line { height: 14px; }
-  .logo-main { font-size: 1.15rem; letter-spacing: 1px; }
-  .logo-year { font-size: 0.75rem; margin-left: 3px; }
-  .nav-logo-img { height: 20px; }
-  .nav-inner { padding: 0 12px; }
+  .nav-inner { padding: 0 20px; }
 }

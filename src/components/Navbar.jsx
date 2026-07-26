@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import logoWhite from '../assets/logo-white.png';
-import collegeCrest from '../assets/college-crest.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -22,30 +21,19 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Navbar */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
-          <div className="nav-brand-group">
-            {/* St. George's College Crest Icon */}
+          <button className="nav-logo" onClick={() => scrollTo('home')}>
             <img
-              src={collegeCrest}
-              alt="St. George's College Crest"
-              className="nav-crest-icon"
+              src={logoWhite}
+              alt="ALGORA"
+              className="nav-logo-img"
             />
-            <div className="nav-divider-line" />
-            {/* ALGORA Brand */}
-            <button className="nav-logo" onClick={() => scrollTo('home')}>
-              <img
-                src={logoWhite}
-                alt="ALGORA"
-                className="nav-logo-img"
-              />
-              <div className="nav-logo-text">
-                <span className="logo-main">ALGORA</span>
-                <span className="logo-year">'26</span>
-              </div>
-            </button>
-          </div>
+            <div className="nav-logo-text">
+              <span className="logo-main">ALGORA</span>
+              <span className="logo-year">'26</span>
+            </div>
+          </button>
 
           <ul className="nav-links">
             {NAV.map(item => (
@@ -70,7 +58,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         {NAV.map(item => (
           <button key={item} onClick={() => scrollTo(item.toLowerCase())}>{item}</button>
