@@ -1,6 +1,5 @@
 import React from 'react';
 import logoFull from '../assets/logo-white-cropped.png';
-import collegeLogo from '../assets/college-logo.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -33,15 +32,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 2. Metadata Bar: St. George's College Logo (Left) │ Dept. of Computer Applications (Right) */}
+      {/* 2. Metadata Bar: St. George's College Text (Left) │ Dept. of Computer Applications Text (Right) */}
       <div className="hero-bar">
-        <div className="hero-bar-college-wrap">
-          <img
-            src={collegeLogo}
-            alt="St. George's College Aruvithura"
-            className="hero-college-full-logo"
-          />
-        </div>
+        <span className="hero-bar-left">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
         <span className="hero-bar-right">DEPT. OF COMPUTER APPLICATIONS</span>
       </div>
 
