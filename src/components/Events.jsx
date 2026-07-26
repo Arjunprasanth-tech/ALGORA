@@ -30,8 +30,8 @@ export default function Events() {
           <div className="title-web-wrap">
             <h2 className="display-head">EVENTS</h2>
             <svg className="section-web-strand" viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0 Q 100 25 200 0" stroke="rgba(232,39,43,0.4)" strokeWidth="1" fill="none"/>
-              <circle cx="100" cy="12" r="2" fill="#e8272b"/>
+              <path d="M0 0 Q 100 25 200 0" stroke="rgba(255,255,255,0.55)" strokeWidth="1" fill="none"/>
+              <circle cx="100" cy="12" r="2" fill="#ffffff"/>
             </svg>
           </div>
         </div>
