@@ -29,11 +29,15 @@ export default function Events() {
         <div className="events-head reveal">
           <div className="title-web-wrap">
             <h2 className="display-head">EVENTS</h2>
-            <svg className="section-web-strand" viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0 L40 14 L120 20 L200 14 L240 0" stroke="rgba(255,255,255,0.6)" strokeWidth="1" fill="none"/>
-              <circle cx="40" cy="14" r="2" fill="#ffffff"/>
-              <circle cx="120" cy="20" r="3" fill="#e8272b"/>
-              <circle cx="200" cy="14" r="2" fill="#ffffff"/>
+            {/* IoT Network Web Strand under EVENTS title */}
+            <svg className="section-web-strand" viewBox="0 0 260 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0 L50 16 L130 22 L210 16 L260 0" stroke="rgba(255,255,255,0.6)" strokeWidth="1" fill="none"/>
+              <circle cx="50" cy="16" r="2.5" fill="#ffffff" />
+              <circle cx="130" cy="22" r="3.5" fill="#e8272b" />
+              <circle cx="210" cy="16" r="2.5" fill="#00ff66" />
+              <text x="35" y="26" fill="rgba(255,255,255,0.6)" fontSize="5" fontFamily="monospace">IoT_DEV</text>
+              <text x="115" y="14" fill="#e8272b" fontSize="5" fontFamily="monospace">GATEWAY</text>
+              <text x="195" y="26" fill="#00ff66" fontSize="5" fontFamily="monospace">ACTIVE</text>
             </svg>
           </div>
         </div>
