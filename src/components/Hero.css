@@ -1,5 +1,5 @@
 /* ================================================================
-   HERO — Editorial Poster Style (TIGHT TOP EMBLEM LAYOUT)
+   HERO — Editorial Poster Style (FULL LOGO & ZERO-GAP MOBILE FIX)
    ================================================================ */
 
 .hero {
@@ -9,7 +9,7 @@
   background: var(--bg);
   overflow: hidden;
   position: relative;
-  margin-top: 64px; /* navbar offset */
+  margin-top: 64px; /* navbar height offset */
   padding: 0;
 }
 
@@ -33,21 +33,21 @@
   background: var(--border);
 }
 
-/* ── 1. PROMINENT EMBLEM SECTION ──
+/* ── 1. PROMINENT FULL LOGO SECTION ──
    Starts immediately below navbar (0 gap above!)
 */
 .hero-top-logo-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 20px 8px; /* Minimal padding directly below navbar */
+  padding: 12px 20px 8px; /* Tight padding directly below navbar */
   z-index: 3;
   width: 100%;
   margin: 0;
 }
 
 .hero-logo-large-img {
-  width: clamp(180px, 32vw, 320px);
+  width: clamp(200px, 34vw, 340px);
   height: auto;
   object-fit: contain;
   display: block;
@@ -182,7 +182,7 @@
   }
 
   .hero-logo-large-img {
-    width: clamp(160px, 50vw, 240px); /* Big emblem on mobile */
+    width: clamp(170px, 55vw, 260px); /* Big full logo on mobile */
   }
 
   .hero-bar {
@@ -215,8 +215,8 @@
 }
 
 @media (max-width: 480px) {
-  .hero-top-logo-section { padding: 6px 8px 2px; }
-  .hero-logo-large-img   { width: clamp(150px, 54vw, 220px); }
+  .hero-top-logo-section { padding: 4px 6px 2px; }
+  .hero-logo-large-img   { width: clamp(160px, 58vw, 240px); }
   .hero-bar-left,
   .hero-bar-right        { font-size: 0.46rem; letter-spacing: 1px; }
   .hero-algora           { font-size: clamp(3.2rem, 21vw, 5.5rem); }

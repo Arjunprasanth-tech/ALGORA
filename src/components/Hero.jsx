@@ -1,5 +1,5 @@
 import React from 'react';
-import logoEmblem from '../assets/logo-emblem-white.png';
+import logoFull from '../assets/logo-white-cropped.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -21,11 +21,11 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* Prominent Logo Section — sits tightly under navbar */}
+      {/* Full Logo Section (Emblem + A L G O R A text) — sits tightly under navbar */}
       <div className="hero-top-logo-section reveal">
         <img
-          src={logoEmblem}
-          alt="ALGORA Emblem"
+          src={logoFull}
+          alt="ALGORA Full Logo"
           className="hero-logo-large-img"
         />
       </div>
