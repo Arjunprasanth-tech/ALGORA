@@ -25,15 +25,15 @@
   justify-content: space-between;
 }
 
-/* Brand Group: College Logo + Divider + ALGORA Brand */
+/* Brand Group: Compact Crest Icon + Divider + ALGORA Brand */
 .nav-brand-group {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
-.nav-college-logo-img {
-  height: 34px;
+.nav-crest-icon {
+  height: 30px;
   width: auto;
   object-fit: contain;
   opacity: 0.95;
@@ -42,7 +42,7 @@
 
 .nav-divider-line {
   width: 1px;
-  height: 24px;
+  height: 20px;
   background: var(--border);
 }
 
@@ -55,7 +55,7 @@
 }
 
 .nav-logo-img {
-  height: 32px;
+  height: 30px;
   width: auto;
   aspect-ratio: 1 / 1;
   object-fit: contain;
@@ -187,11 +187,11 @@
 
 @media (max-width: 768px) {
   .nav-brand-group { gap: 8px; }
-  .nav-college-logo-img { height: 26px; }
-  .nav-divider-line { height: 18px; }
+  .nav-crest-icon { height: 24px; }
+  .nav-divider-line { height: 16px; }
   .logo-main { font-size: 1.3rem; }
   .logo-year { font-size: 0.85rem; }
-  .nav-logo-img { height: 26px; }
+  .nav-logo-img { height: 24px; }
 
   .nav-links { display: none; }
   .hamburger { display: flex; }
@@ -200,10 +200,10 @@
 
 @media (max-width: 480px) {
   .nav-brand-group { gap: 6px; }
-  .nav-college-logo-img { height: 22px; }
-  .nav-divider-line { height: 16px; }
+  .nav-crest-icon { height: 22px; }
+  .nav-divider-line { height: 14px; }
   .logo-main { font-size: 1.15rem; letter-spacing: 1px; }
   .logo-year { font-size: 0.75rem; margin-left: 3px; }
-  .nav-logo-img { height: 22px; }
+  .nav-logo-img { height: 20px; }
   .nav-inner { padding: 0 12px; }
 }

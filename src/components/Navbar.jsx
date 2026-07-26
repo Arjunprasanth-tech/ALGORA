@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoWhite from '../assets/logo-white.png';
-import collegeLogo from '../assets/college-logo.png';
+import collegeCrest from '../assets/college-crest.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -22,15 +22,15 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Navbar with College Logo on left */}
+      {/* Main Navbar */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
           <div className="nav-brand-group">
-            {/* St. George's College Official Logo */}
+            {/* St. George's College Crest Icon */}
             <img
-              src={collegeLogo}
-              alt="St. George's College Aruvithura"
-              className="nav-college-logo-img"
+              src={collegeCrest}
+              alt="St. George's College Crest"
+              className="nav-crest-icon"
             />
             <div className="nav-divider-line" />
             {/* ALGORA Brand */}
