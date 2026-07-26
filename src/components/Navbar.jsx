@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import logoWhite from '../assets/logo-white.png';
+import collegeLogo from '../assets/college-logo.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
 
 export default function Navbar() {
-  const [scrolled, setScrolled]     = useState(false);
-  const [menuOpen, setMenuOpen]     = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -21,6 +22,19 @@ export default function Navbar() {
 
   return (
     <>
+      {/* 0. Official Top Header Bar */}
+      <div className="top-institution-bar">
+        <div className="top-bar-inner">
+          <img
+            src={collegeLogo}
+            alt="St. George's College Aruvithura"
+            className="top-college-logo"
+          />
+          <span className="top-bar-dept">DEPT. OF COMPUTER APPLICATIONS</span>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
           <button className="nav-logo" onClick={() => scrollTo('home')}>
@@ -58,6 +72,7 @@ export default function Navbar() {
         </div>
       </nav>
 
+      {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         {NAV.map(item => (
           <button key={item} onClick={() => scrollTo(item.toLowerCase())}>{item}</button>

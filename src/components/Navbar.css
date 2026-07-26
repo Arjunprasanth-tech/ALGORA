@@ -1,6 +1,49 @@
-.navbar {
+/* ================================================================
+   TOP INSTITUTION BAR & NAVBAR
+   ================================================================ */
+
+/* ── 0. Official Top Institution Header Bar (Fixed at Y=0) ── */
+.top-institution-bar {
   position: fixed;
   top: 0; left: 0; right: 0;
+  height: 38px;
+  background: #080808;
+  border-bottom: 1px solid var(--border);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-college-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.95;
+}
+
+.top-bar-dept {
+  font-family: var(--f-mono);
+  font-size: 0.58rem;
+  letter-spacing: 2px;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+/* ── Main Navbar (Fixed at Y=38px) ── */
+.navbar {
+  position: fixed;
+  top: 38px; left: 0; right: 0;
   z-index: 1000;
   background: var(--bg);
   border-bottom: 1px solid transparent;
@@ -114,10 +157,10 @@
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); background: var(--red); }
 
-/* Mobile menu — fixed overlay so it takes 0px layout height in document flow */
+/* Mobile menu — fixed overlay sitting under top bar + navbar (Y = 102px) */
 .mobile-menu {
   position: fixed;
-  top: 64px;
+  top: 102px;
   left: 0;
   right: 0;
   z-index: 999;
@@ -132,6 +175,7 @@
   pointer-events: none;
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
+
 .mobile-menu.open {
   transform: translateY(0);
   opacity: 1;
@@ -160,6 +204,10 @@
 }
 
 @media (max-width: 768px) {
+  .top-bar-inner { padding: 0 20px; }
+  .top-bar-dept { font-size: 0.48rem; letter-spacing: 1px; }
+  .top-college-logo { height: 20px; }
+
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-inner { padding: 0 20px; }
