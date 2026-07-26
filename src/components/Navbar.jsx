@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoWhite from '../assets/logo-white.png';
+import collegeLogo from '../assets/college-logo.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -23,6 +24,7 @@ export default function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
+          {/* Left: ALGORA Fest Brand */}
           <button className="nav-logo" onClick={() => scrollTo('home')}>
             <img
               src={logoWhite}
@@ -35,26 +37,36 @@ export default function Navbar() {
             </div>
           </button>
 
-          <ul className="nav-links">
-            {NAV.map(item => (
-              <li key={item}>
-                <button onClick={() => scrollTo(item.toLowerCase())}>{item}</button>
+          {/* Right Group: Nav Links + Register CTA + Official College Logo */}
+          <div className="nav-right-group">
+            <ul className="nav-links">
+              {NAV.map(item => (
+                <li key={item}>
+                  <button onClick={() => scrollTo(item.toLowerCase())}>{item}</button>
+                </li>
+              ))}
+              <li>
+                <button className="nav-cta" onClick={() => scrollTo('register')}>
+                  Register
+                </button>
               </li>
-            ))}
-            <li>
-              <button className="nav-cta" onClick={() => scrollTo('register')}>
-                Register
-              </button>
-            </li>
-          </ul>
+            </ul>
 
-          <button
-            className={`hamburger ${menuOpen ? 'open' : ''}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span /><span /><span />
-          </button>
+            {/* St. George's College Logo on Right Side of Navbar */}
+            <img
+              src={collegeLogo}
+              alt="St. George's College Aruvithura"
+              className="nav-college-logo-right"
+            />
+
+            <button
+              className={`hamburger ${menuOpen ? 'open' : ''}`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span /><span /><span />
+            </button>
+          </div>
         </div>
       </nav>
 
