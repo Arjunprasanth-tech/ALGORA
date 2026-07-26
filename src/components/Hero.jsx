@@ -33,9 +33,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 2. Metadata Bar with FULL St. George's College Logo */}
+      {/* 2. Metadata Bar: St. George's College Logo (Left) │ Dept. of Computer Applications (Right) */}
       <div className="hero-bar">
-        <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
         <div className="hero-bar-college-wrap">
           <img
             src={collegeLogo}
@@ -43,6 +42,7 @@ export default function Hero() {
             className="hero-college-full-logo"
           />
         </div>
+        <span className="hero-bar-right">DEPT. OF COMPUTER APPLICATIONS</span>
       </div>
 
       {/* 3. Main Poster Display Title — Giant Red ALGORA */}
