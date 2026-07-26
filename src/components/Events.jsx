@@ -29,15 +29,11 @@ export default function Events() {
         <div className="events-head reveal">
           <div className="title-web-wrap">
             <h2 className="display-head">EVENTS</h2>
-            {/* IoT Network Web Strand under EVENTS title */}
-            <svg className="section-web-strand" viewBox="0 0 260 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0 L50 16 L130 22 L210 16 L260 0" stroke="rgba(255,255,255,0.6)" strokeWidth="1" fill="none"/>
-              <circle cx="50" cy="16" r="2.5" fill="#ffffff" />
-              <circle cx="130" cy="22" r="3.5" fill="#e8272b" />
-              <circle cx="210" cy="16" r="2.5" fill="#00ff66" />
-              <text x="35" y="26" fill="rgba(255,255,255,0.6)" fontSize="5" fontFamily="monospace">IoT_DEV</text>
-              <text x="115" y="14" fill="#e8272b" fontSize="5" fontFamily="monospace">GATEWAY</text>
-              <text x="195" y="26" fill="#00ff66" fontSize="5" fontFamily="monospace">ACTIVE</text>
+            {/* Real Spider Web Strand */}
+            <svg className="section-web-strand" viewBox="0 0 260 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0 Q 130 32 260 0" stroke="rgba(255,255,255,0.7)" strokeWidth="1.2" fill="none"/>
+              <path d="M25 0 Q 130 22 235 0" stroke="rgba(255,255,255,0.45)" strokeWidth="0.9" fill="none"/>
+              <path d="M60 0 Q 130 14 200 0" stroke="rgba(232,39,43,0.5)" strokeWidth="0.8" fill="none"/>
             </svg>
           </div>
         </div>
