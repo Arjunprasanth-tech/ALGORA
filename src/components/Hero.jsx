@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* 1. Complete Official Logo (Triangle Emblem + A L G O R A Text) */}
+      {/* 1. Official Logo Artwork (Hero Focal Point) */}
       <div className="hero-top-logo-section reveal">
         <img
           src={logoFull}
@@ -30,46 +30,27 @@ export default function Hero() {
         />
       </div>
 
-      {/* 2. Metadata Bar */}
+      {/* 2. Sleek Metadata Rule Bar */}
       <div className="hero-bar">
         <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
         <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
       </div>
 
-      {/* 3. Main Display Title — ALGORA */}
+      {/* 3. Clean Minimalist Title & Tagline */}
       <div className="hero-main reveal">
-        <h1 className="hero-algora">ALGORA</h1>
+        <div className="hero-edition-tag">EDITION 01 · 2026</div>
+        <h1 className="hero-subhead-title">INAUGURAL TECH FEST</h1>
+        <p className="hero-tagline-text">Where Innovation Meets Imagination</p>
       </div>
 
-      {/* 4. Bottom Info & Actions */}
-      <div className="hero-bottom">
-        <div>
-          <span className="hero-sub-label">Where Innovation Meets Imagination</span>
-          <div className="hero-fest-name">TECH FEST · 2026</div>
-          <p className="hero-tagline">
-            The inaugural tech-cultural festival of the Department of
-            Computer Applications — celebrating innovation, creativity,
-            and collaboration.
-          </p>
-        </div>
-
-        <div>
-          <p className="hero-description">
-            ALGORA brings together the brightest minds, the boldest
-            ideas, and the most creative spirits through competitions
-            and experiences that push the boundaries of technology.
-          </p>
-        </div>
-
-        <div className="hero-cta-group">
-          <div className="hero-edition">EDITION 01 · VOL. I</div>
-          <button className="btn-primary" onClick={() => scrollTo('events')}>
-            EXPLORE EVENTS
-          </button>
-          <button className="btn-outline" onClick={() => scrollTo('register')}>
-            REGISTER NOW →
-          </button>
-        </div>
+      {/* 4. Action CTA Group */}
+      <div className="hero-bottom-clean reveal">
+        <button className="btn-primary" onClick={() => scrollTo('events')}>
+          EXPLORE EVENTS
+        </button>
+        <button className="btn-outline" onClick={() => scrollTo('register')}>
+          REGISTER NOW →
+        </button>
       </div>
 
     </section>
