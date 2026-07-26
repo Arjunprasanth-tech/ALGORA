@@ -43,13 +43,12 @@ export default function Events() {
           ))}
         </div>
 
-        {/* Grid */}
-        <div className="events-grid">
-          {events.map((ev, i) => (
+        {/* Grid — reveal target on grid container so filtering always renders visible cards */}
+        <div className="events-grid reveal">
+          {events.map((ev) => (
             <div
               key={ev.id}
-              className={`ev-card reveal ${ev.tag === 'MAIN EVENT' ? 'ev-card-featured' : ''}`}
-              style={{ transitionDelay: `${i * 80}ms` }}
+              className={`ev-card ${ev.tag === 'MAIN EVENT' ? 'ev-card-featured' : ''}`}
             >
               <div className="ev-top">
                 <span className="ev-num">{ev.num}</span>

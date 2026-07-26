@@ -24,12 +24,11 @@ export default function Gallery() {
 
         <h2 className="display-head reveal" style={{marginBottom:48}}>GALLERY</h2>
 
-        <div className="gallery-grid">
-          {ITEMS.map((item, i) => (
+        <div className="gallery-grid reveal">
+          {ITEMS.map((item) => (
             <div
               key={item.id}
-              className={`g-cell reveal ${item.tall ? 'tall' : ''}`}
-              style={{ transitionDelay:`${i*70}ms` }}
+              className={`g-cell ${item.tall ? 'tall' : ''}`}
               onClick={() => setLb(item)}
             >
               <div className="g-photo" style={{ '--hue': item.hue }}>
