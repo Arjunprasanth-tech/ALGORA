@@ -67,10 +67,12 @@
   width: 100%;
 }
 
-.hero-bar-left {
-  font-family: var(--f-mono);
-  font-size: 0.62rem;
-  letter-spacing: 3px;
+.hero-bar-left,
+.hero-bar-right {
+  font-family: var(--f-cond);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gray);
 }
@@ -204,8 +206,11 @@
     align-items: center;
   }
 
-  .hero-bar-left {
-    font-size: 0.48rem;
+  .hero-bar-left,
+  .hero-bar-right {
+    font-family: var(--f-cond);
+    font-size: 0.68rem;
+    font-weight: 600;
     letter-spacing: 1.5px;
   }
 

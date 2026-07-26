@@ -74,9 +74,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .section-bar-label {
-  font-family: var(--f-mono);
-  font-size: 0.65rem;
-  letter-spacing: 3px;
+  font-family: var(--f-cond);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gray);
 }
