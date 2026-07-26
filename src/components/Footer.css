@@ -40,6 +40,16 @@
 
 .footer-tagline { margin-top: 8px; }
 
+.footer-brand { display: flex; flex-direction: column; gap: 8px; }
+
+.footer-college-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
 .footer-nav { display: flex; flex-direction: column; gap: 2px; }
 
 .footer-link {

@@ -1,4 +1,5 @@
 import React from 'react';
+import collegeLogo from '../assets/college-logo.png';
 import './Footer.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -22,6 +23,7 @@ export default function Footer() {
         <div className="footer-main">
 
           <div className="footer-brand">
+            <img src={collegeLogo} alt="St. George's College Aruvithura" className="footer-college-logo" />
             <div className="footer-logo">ALGORA</div>
             <div className="footer-year">2026</div>
             <p className="footer-tagline label-sm">
