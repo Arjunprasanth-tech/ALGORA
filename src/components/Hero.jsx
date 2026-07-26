@@ -1,5 +1,5 @@
 import React from 'react';
-import logoEmblem from '../assets/logo-emblem-white.png';
+import logoFull from '../assets/logo-white-cropped.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
 
-      {/* Vertical side labels (desktop only) */}
+      {/* Vertical side labels (desktop) */}
       <div className="hero-side hero-side-left">
         <div className="hero-side-line" />
         <span className="v-label">INAUGURAL EDITION</span>
@@ -21,11 +21,11 @@ export default function Hero() {
         <div className="hero-side-line" />
       </div>
 
-      {/* 1. Centered Emblem with elegant breathing room */}
+      {/* 1. Complete Official Logo (Triangle Emblem + A L G O R A Text) */}
       <div className="hero-top-logo-section reveal">
         <img
-          src={logoEmblem}
-          alt="ALGORA Emblem"
+          src={logoFull}
+          alt="ALGORA Official Logo"
           className="hero-logo-large-img"
         />
       </div>
@@ -36,16 +36,16 @@ export default function Hero() {
         <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
       </div>
 
-      {/* 3. Main Display Title — ALGORA */}
+      {/* 3. Main Display Title */}
       <div className="hero-main reveal">
-        <h1 className="hero-algora">ALGORA</h1>
+        <h1 className="hero-algora">TECH FEST '26</h1>
       </div>
 
       {/* 4. Bottom Info & Actions */}
       <div className="hero-bottom">
-        <div className="hero-col-main">
+        <div>
           <span className="hero-sub-label">Where Innovation Meets Imagination</span>
-          <div className="hero-fest-name">TECH FEST · 2026</div>
+          <div className="hero-fest-name">ALGORA · 2026</div>
           <p className="hero-tagline">
             The inaugural tech-cultural festival of the Department of
             Computer Applications — celebrating innovation, creativity,
@@ -53,7 +53,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="hero-col-desc">
+        <div>
           <p className="hero-description">
             ALGORA brings together the brightest minds, the boldest
             ideas, and the most creative spirits through competitions
