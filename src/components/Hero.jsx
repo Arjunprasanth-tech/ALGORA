@@ -1,6 +1,5 @@
 import React from 'react';
 import logoFull from '../assets/logo-white-cropped.png';
-import collegeLogo from '../assets/college-logo.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -31,17 +30,10 @@ export default function Hero() {
         />
       </div>
 
-      {/* 2. Sleek Metadata Rule Bar with subtle College Badge */}
+      {/* 2. Sleek Metadata Rule Bar */}
       <div className="hero-bar">
         <span className="hero-bar-left">DEPT. OF COMPUTER APPLICATIONS</span>
-        <div className="hero-bar-right-group">
-          <img
-            src={collegeLogo}
-            alt="St. George's College Aruvithura"
-            className="hero-college-badge-icon"
-          />
-          <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
-        </div>
+        <span className="hero-bar-right">ST. GEORGE'S COLLEGE, ARUVITHURA</span>
       </div>
 
       {/* 3. Clean Subhead & Tagline */}

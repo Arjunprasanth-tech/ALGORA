@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoWhite from '../assets/logo-white.png';
+import collegeLogo from '../assets/college-logo.png';
 import './Navbar.css';
 
 const NAV = ['About','Events','Schedule','Gallery','Sponsors','Contact'];
@@ -21,20 +22,30 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Fixed Navbar */}
+      {/* Main Navbar with College Logo on left */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
-          <button className="nav-logo" onClick={() => scrollTo('home')}>
+          <div className="nav-brand-group">
+            {/* St. George's College Official Logo */}
             <img
-              src={logoWhite}
-              alt="ALGORA"
-              className="nav-logo-img"
+              src={collegeLogo}
+              alt="St. George's College Aruvithura"
+              className="nav-college-logo-img"
             />
-            <div className="nav-logo-text">
-              <span className="logo-main">ALGORA</span>
-              <span className="logo-year">'26</span>
-            </div>
-          </button>
+            <div className="nav-divider-line" />
+            {/* ALGORA Brand */}
+            <button className="nav-logo" onClick={() => scrollTo('home')}>
+              <img
+                src={logoWhite}
+                alt="ALGORA"
+                className="nav-logo-img"
+              />
+              <div className="nav-logo-text">
+                <span className="logo-main">ALGORA</span>
+                <span className="logo-year">'26</span>
+              </div>
+            </button>
+          </div>
 
           <ul className="nav-links">
             {NAV.map(item => (
